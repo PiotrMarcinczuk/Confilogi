@@ -1,0 +1,40 @@
+header {
+  max-width: 1108px;
+  margin: auto;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .loginButton {
+    background-color: hsl(0, 94%, 66%);
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2em;
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 50%;
+  }
+}
