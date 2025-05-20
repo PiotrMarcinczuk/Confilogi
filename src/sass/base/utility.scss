@@ -2,20 +2,20 @@
   font-weight: 500;
 }
 
-.px-2 {
-  padding: 0 2px 0 2px;
+.px-1 {
+  padding: 0 1.8rem 0 1.8rem;
 }
 
-.-px-2 {
-  padding: 0 -2px 0 -2px;
+.mx-1 {
+  margin: 0 1.8rem 0 1.8rem;
 }
 
-.mx-2 {
-  margin: 0 2px 0 2px;
+.-mx-1 {
+  margin: 0 -1rem 0 -1rem;
 }
 
-.-mx-2 {
-  margin: 0 -2px 0 -2px;
+.z-40 {
+  z-index: 40;
 }
 
 .flex {

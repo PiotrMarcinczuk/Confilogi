@@ -1,0 +1,49 @@
+@import "../variables";
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  hr {
+    width: 100%;
+    position: relative;
+    height: 0.1px;
+    background-color: $light-gray;
+    top: -2px;
+    margin: 0;
+  }
+  .feature-btn {
+    border: none;
+    border-bottom: 0.1px solid $light-gray;
+    background-color: white;
+    color: $dark-blue;
+    width: 240px;
+    height: 3em;
+    font-size: 1.15rem;
+  }
+  .feature-btn:hover {
+    @include text--hover;
+  }
+  .feature-btn--focused {
+    border-bottom: 3px solid $light-red;
+    z-index: 20;
+  }
+}
+
+@media (max-width: 900px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+    }
+    hr {
+      width: 80%;
+      margin: 0;
+    }
+    .feature-btn {
+      width: 80%;
+    }
+  }
+}

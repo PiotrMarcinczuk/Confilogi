@@ -1,0 +1,47 @@
+$dark-blue: hsl(229, 31%, 21%);
+$light-blue: hsl(231, 69%, 60%);
+$light-red: hsl(0, 94%, 66%);
+$light-gray: hsl(229, 8%, 60%);
+$b-radius-sm: 0.3rem;
+
+@mixin blue-btn {
+  color: white;
+  background-color: $light-blue;
+  border: 2px solid $light-blue;
+  border-radius: $b-radius-sm;
+}
+
+@mixin blue-btn--hover {
+  color: $light-blue;
+  background-color: white;
+  transition: 0.3s;
+  animation: ease-in-out;
+  cursor: pointer;
+}
+
+@mixin red-btn--hover {
+  background-color: white;
+  color: $light-red;
+  transition: 0.3s;
+  animation: ease-in-out;
+  cursor: pointer;
+}
+
+@mixin text--hover {
+  color: $light-red;
+  transition: 0.3s;
+  animation: ease-in-out;
+  cursor: pointer;
+}
+
+@mixin mx-auto {
+  max-width: 1158px;
+  margin: auto;
+}
+
+@mixin weaker-h {
+  font-size: 2.15rem;
+  font-weight: 500;
+  color: $dark-blue;
+  text-align: center;
+}

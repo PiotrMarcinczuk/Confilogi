@@ -1,0 +1,33 @@
+@import "../variables";
+
+.mobileMenu-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba($dark-blue, 0.9);
+  .logo-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .closeMenu-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .mobileMenu-nav {
+    margin-top: 3rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

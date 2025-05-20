@@ -1,0 +1,103 @@
+@import "../variables";
+.newsletter-section {
+  color: white;
+  background-color: $light-blue;
+  padding: 4.7rem 0 4.7rem 0;
+  .newsletter-container {
+    @include mx-auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .newsletter-form {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .input-container {
+        position: relative;
+        .newsletter-input {
+          border: none;
+          border-radius: 0.25rem 0.25rem 0 0;
+          width: 19rem;
+          height: 3rem;
+          padding: 1rem;
+          outline: none;
+        }
+        .newsletter-iunput--error {
+          border: 2px solid $light-red;
+        }
+        .validation-error {
+          color: white;
+          position: absolute;
+          width: 100%;
+          font-size: 0.8rem;
+          background-color: $light-red;
+          border-radius: 0 0 0.25rem 0.25rem;
+          .validation-error-message {
+            font-size: 0.675rem;
+            padding: 0.2rem;
+            text-align: center;
+          }
+        }
+        .newsletter-error-icon {
+          position: absolute;
+          right: 7.5%;
+          top: 75%;
+          transform: translateY(-100%);
+        }
+      }
+
+      .newsletter-form--btn {
+        background-color: $light-red;
+        width: 8rem;
+        height: 3rem;
+        padding: 0.6rem;
+        border: 2px solid $light-red;
+        border-radius: $b-radius-sm;
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0 0 0 1rem;
+      }
+      .newsletter-form--btn:hover {
+        @include red-btn--hover;
+      }
+    }
+    .users-count {
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    .newsletter-paragraph {
+      font-size: 2rem;
+      width: 40%;
+      text-align: center;
+      font-weight: 500;
+      margin: 0.8rem 0 0.5rem 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .newsletter-section {
+    .newsletter-container {
+      .newsletter-paragraph {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+      .newsletter-form {
+        flex-direction: column;
+        .input-container {
+          .newsletter-input {
+            width: 100%;
+          }
+        }
+        .newsletter-form--btn {
+          width: 100%;
+          margin: 1rem 0 0 0;
+        }
+      }
+    }
+  }
+}

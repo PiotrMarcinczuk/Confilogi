@@ -1,0 +1,113 @@
+@import "../variables";
+.faq-section {
+  @include mx-auto;
+  .faq-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 18rem;
+    .faq-h {
+      @include weaker-h;
+      margin: 0 0 1rem 0;
+    }
+    .faq-p {
+      width: 80%;
+      margin-top: 1rem 0 1rem 0;
+      text-align: center;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      font-size: 1.5rem;
+      flex-wrap: wrap;
+      .faq-list--item {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 1rem 1.5rem 0;
+        .faq-list--item--title {
+          display: flex;
+          width: 100%;
+          .faq-list-h {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            margin: 0;
+            font-size: 1.25rem;
+          }
+
+          .faq-list--item--arrow {
+            width: 50%;
+            text-align: right;
+          }
+
+          .faq-list--item--arrow--active {
+            width: 50%;
+            text-align: right;
+            svg {
+              rotate: 180deg;
+              color: $light-red;
+            }
+          }
+        }
+        .faq-list-p {
+          font-size: 1.15rem;
+        }
+      }
+      .faq-list--item:hover {
+        .faq-list-h {
+          @include text--hover;
+          color: $light-red;
+        }
+        cursor: pointer;
+        .faq-list--item--arrow {
+          svg {
+            color: $light-red;
+          }
+        }
+      }
+    }
+    .faq-info-btn {
+      @include blue-btn;
+      width: 7.2rem;
+      height: 3rem;
+      padding: 0.4rem 0.7rem;
+      margin-bottom: 5rem;
+    }
+    .faq-info-btn:hover {
+      @include blue-btn--hover;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .faq-section {
+    .faq-container {
+      width: 100%;
+      .faq-h {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+      }
+      p {
+        width: 100%;
+      }
+      ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li {
+          flex-direction: row;
+          align-items: center;
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+      .faq-info-btn {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

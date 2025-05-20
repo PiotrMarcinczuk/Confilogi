@@ -1,13 +1,12 @@
-header {
-  max-width: 1108px;
-  margin: auto;
+@import "../variables";
 
-  .logoContainer {
+header {
+  @include mx-auto;
+  .logo-container {
     display: flex;
     align-items: center;
     width: 50%;
   }
-
   ul {
     display: flex;
     justify-content: space-between;
@@ -18,9 +17,11 @@ header {
       justify-content: center;
       align-items: center;
     }
+    li:hover {
+      @include text--hover;
+    }
   }
-
-  .loginButton {
+  .login-btn {
     background-color: hsl(0, 94%, 66%);
     width: 110px;
     height: 40px;
@@ -28,13 +29,33 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 0.2em;
+    border: solid 2px $light-red;
     color: white;
   }
+  .login-btn:hover {
+    @include red-btn--hover;
+  }
+  .mobile-menu {
+    display: none;
+  }
 
-  nav {
+  .header-nav {
     display: flex;
     justify-content: space-between;
-    align-items: space-between;
+    // align-items: space-between;
     width: 50%;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    margin-top: 2rem;
+    .mobile-menu {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+    .header-nav {
+      display: none;
+    }
   }
 }

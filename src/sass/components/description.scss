@@ -1,0 +1,100 @@
+@import "../variables.scss";
+
+.description-section {
+  @include mx-auto;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  .description-container {
+    margin-top: 9rem;
+    display: flex;
+    justify-content: flex-end;
+    .description-text {
+      display: flex;
+      max-width: 40%;
+      margin-left: 9rem;
+      flex-direction: column;
+      justify-content: flex-end;
+      .description-h {
+        @include weaker-h;
+        max-width: 100%;
+        text-wrap: nowrap;
+        text-align: left;
+      }
+      .description-p {
+        max-width: 100%;
+        text-align: left;
+      }
+      .description-buttons {
+        .description-btn--blue {
+          @include blue-btn;
+          padding: 0.8rem 1.7rem 0.8rem 1.7rem;
+          font-size: 1.15rem;
+        }
+        .description-btn--blue:hover {
+          @include blue-btn--hover;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .description-section {
+    .description-container {
+      margin-top: 30rem;
+      margin-bottom: 20rem;
+      .description-text {
+        max-width: 100%;
+        margin-left: 0;
+        .description-h {
+          max-width: 100%;
+          font-size: 1.3em;
+        }
+        .description-p {
+          text-align: center;
+        }
+      }
+      .description-buttons {
+        display: none;
+      }
+    }
+  }
+}
+
+.description-image {
+  position: absolute;
+  left: 0;
+  transform: translate(30%, 0%);
+  margin-top: 5rem;
+  z-index: 50;
+}
+@media (max-width: 1180px) {
+  .description-image {
+    transform: translate(0, 10%);
+    margin: 0 1.8rem 0 1.8rem;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.blue-div--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 5rem;
+  transform: translate(0, 345%);
+  background-color: $light-blue;
+  width: 650px;
+  height: 300px;
+  border-radius: 0 70rem 70rem 0;
+  z-index: 10;
+}
+@media (max-width: 1180px) {
+  .blue-div--left {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    transform: translate(0, 580%);
+  }
+}

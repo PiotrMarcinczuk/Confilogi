@@ -1,0 +1,36 @@
+@import "../variables";
+
+.extension-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: $b-radius-sm;
+  position: relative;
+  padding: 2.4em 1.5em 2em 1.5em;
+  margin: 0 1rem 0 1rem;
+  box-shadow: -1px 14px 31px -17px rgba(66, 68, 90, 1);
+  .extension-line {
+    width: 100%;
+    position: absolute;
+    bottom: 7rem;
+  }
+  .extension-browser {
+    margin-top: 2rem;
+  }
+  .extension-version {
+    margin-bottom: 2.5rem;
+  }
+  .extension-btn {
+    @include blue-btn;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.8em;
+    margin-top: 1rem;
+  }
+
+  .extension-btn:hover {
+    @include blue-btn--hover;
+  }
+}

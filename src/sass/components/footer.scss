@@ -1,0 +1,82 @@
+@import "../variables";
+footer {
+  background-color: $dark-blue;
+  margin-top: 4rem;
+  .footer-container {
+    @include mx-auto;
+    color: white;
+    padding: 0.7rem 0 0.7rem 0;
+    .footer-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      ul {
+        list-style: none;
+      }
+      .nav-list {
+        display: flex;
+        width: 50%;
+        li {
+          margin: 0 1.1em 0 1.1em;
+        }
+        li:hover {
+          @include text--hover;
+        }
+      }
+      .logo-list {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        svg {
+          margin: 0 0 0 2.3em;
+        }
+        svg:hover {
+          @include text--hover;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    .footer-container {
+      padding: 2rem 0 2rem 0;
+      .footer-content {
+        flex-direction: column;
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
+        .nav-list {
+          width: 100%;
+          padding: 0;
+          li {
+            text-align: center;
+            margin-top: 1.3rem;
+          }
+        }
+        .logo-list {
+          max-width: 40%;
+          padding: 0;
+          flex-direction: row;
+          justify-content: center;
+          li {
+            width: 50%;
+            text-align: center;
+          }
+          img {
+            margin: 0;
+          }
+          svg {
+            margin: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
