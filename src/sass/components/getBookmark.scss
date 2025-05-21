@@ -94,7 +94,7 @@
 
 @media (max-width: 1180px) {
   .getBookmark-div-absolute {
-    top: 10%;
+    top: 7.5%;
     .absolute-img {
       width: 600px;
     }
@@ -109,14 +109,22 @@
 }
 
 @media (max-width: 768px) {
+  .getBookmark-section {
+    .getBookmark-container {
+      .getBookmark-text {
+        margin-top: 15rem;
+      }
+    }
+  }
   .getBookmark-div-absolute {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    top: 15%;
     // margin: 0.5rem;
     .absolute-img {
-      width: 100%;
+      width: 400px;
       position: relative;
     }
     .blue-div-right {
@@ -125,5 +133,21 @@
       position: static;
       transform: translate(0, -100%);
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .getBookmark-div-absolute {
+    top: 10%;
+    .absolute-img {
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .getBookmark-div-absolute {
+    top: 15%;
   }
 }

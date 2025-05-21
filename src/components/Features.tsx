@@ -1,7 +1,7 @@
 import { useState, memo } from "react";
 import Description from "./Description";
 import FeaturesButtons from "./FeaturesButtons";
-import featuresTab from "../hooks/featuresTab";
+import featuresTab from "../utils/featuresTab";
 import useActiveTab from "../hooks/useActiveTab";
 const Features = memo(function Features() {
   const { activeTab, setActiveTab } = useActiveTab();

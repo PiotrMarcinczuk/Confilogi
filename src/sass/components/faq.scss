@@ -41,6 +41,7 @@
 
           .faq-list-item-arrow {
             width: 50%;
+            color: $light-blue;
             text-align: right;
           }
 
@@ -60,14 +61,9 @@
       .faq-list-item:hover {
         .faq-list-h {
           @include text--hover;
-          color: $light-red;
+          // color: $light-red;
         }
         cursor: pointer;
-        .faq-list-item-arrow {
-          svg {
-            color: $light-red;
-          }
-        }
       }
     }
     .faq-info-btn {
@@ -86,12 +82,13 @@
 @media (max-width: 940px) {
   .faq-section {
     .faq-container {
+      margin-top: 1rem;
       width: 100%;
       .faq-h {
         font-size: 1.5rem;
         margin-top: 5rem;
       }
-      p {
+      .faq-p {
         width: 100%;
       }
       ul {

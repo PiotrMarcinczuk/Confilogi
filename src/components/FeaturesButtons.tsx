@@ -14,7 +14,7 @@ export default function FeaturesButtons({ activeTab, setActiveTab }: any) {
           className={`feature-btn ${activeTab === 1 && "feature-btn--focused"}`}
           onClick={() => setActiveTab(1)}>
           {" "}
-          Simple Bookmarking
+          Speedy Searching
         </button>
       </div>
       <div className="btn-container">
@@ -22,7 +22,7 @@ export default function FeaturesButtons({ activeTab, setActiveTab }: any) {
           className={`feature-btn ${activeTab === 2 && "feature-btn--focused"}`}
           onClick={() => setActiveTab(2)}>
           {" "}
-          Simple Bookmarking
+          Easy Sharing
         </button>
       </div>
     </div>

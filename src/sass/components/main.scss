@@ -10,6 +10,9 @@
     margin-top: 19rem;
     .extensions-list {
       display: flex;
+      justify-content: center;
+      width: 100%;
+      // sasasasasasssssssssssssssssssss
     }
 
     .extensions-list > *:nth-child(2) {
@@ -36,6 +39,7 @@
 @media (max-width: 940px) {
   .extensions-section {
     .extensions-container {
+      margin-top: 7rem;
       .extensions-h4 {
         font-size: 1.3em;
         max-width: 100%;
@@ -46,6 +50,13 @@
       }
       .extensions-list {
         flex-direction: column;
+      }
+      .extensions-list > *:nth-child(2) {
+        top: 0;
+      }
+
+      .extensions-list > *:nth-child(3) {
+        top: 0;
       }
     }
   }

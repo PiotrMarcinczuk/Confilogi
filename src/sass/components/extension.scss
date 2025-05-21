@@ -34,3 +34,14 @@
     @include blue-btn--hover;
   }
 }
+
+@media (max-width: 940px) {
+  .extension-container {
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    .extension-line {
+      bottom: 6rem;
+    }
+  }
+}

@@ -8,7 +8,7 @@ export default function Newsletter() {
   useEffect(() => {
     setTimeout(() => {
       setUsersCount("0");
-    }, 2000);
+    }, 20000);
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {

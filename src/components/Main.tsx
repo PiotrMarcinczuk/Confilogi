@@ -13,9 +13,9 @@ export default function Main() {
   const isCursorOnTop = useCusorDetection();
 
   useEffect(() => {
-    // setTimeout(() => {
-    //   setIsPopupOpen(true);
-    // }, 2000);
+    setTimeout(() => {
+      setIsPopupOpen(true);
+    }, 30000);
     if (isCursorOnTop) {
       setIsPopupOpen(true);
     }

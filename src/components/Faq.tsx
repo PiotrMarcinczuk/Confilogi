@@ -1,24 +1,8 @@
-import iconArrow from "../assets/images/icon-arrow.svg";
 import { useState, memo } from "react";
+import faqQuestions from "../utils/faqQuestions";
 const Faq = memo(function Faq() {
   const [questionIndexTab, setQuestionIndexTab] = useState([]);
-  const faqData = [
-    {
-      question: "What is Bookmark?",
-      answer:
-        "Bookmark is a tool that helps you save and organize your favorite websites.",
-    },
-    {
-      question: "What is Bookmark?",
-      answer:
-        "Bookmark is a tool that helps you save and organize your favorite websites.",
-    },
-    {
-      question: "What is Bookmark?",
-      answer:
-        "Bookmark is a tool that helps you save and organize your favorite websites.",
-    },
-  ];
+
   return (
     <section className="faq-section">
       <div className="mx-1">
@@ -30,7 +14,7 @@ const Faq = memo(function Faq() {
           </p>
           <ul>
             <hr />
-            {faqData.map((item, key) => {
+            {faqQuestions.map((item, key) => {
               return (
                 <div key={key}>
                   <li

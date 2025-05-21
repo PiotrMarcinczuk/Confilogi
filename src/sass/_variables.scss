@@ -14,6 +14,7 @@ $b-radius-sm: 0.3rem;
 @mixin blue-btn--hover {
   color: $light-blue;
   background-color: white;
+  font-weight: 500;
   transition: 0.3s;
   animation: ease-in-out;
   cursor: pointer;

@@ -17,13 +17,17 @@
     }
   }
 }
+
 @media (max-width: 940px) {
   .features-section {
+    transform: translate(0, -4rem);
     .features-container {
+      margin-top: 0rem;
       .features-h {
         margin: 0;
       }
       .features-p {
+        margin-top: 1rem;
         max-width: 85%;
         font-size: 0.9em;
       }

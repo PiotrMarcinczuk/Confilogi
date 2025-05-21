@@ -8,7 +8,7 @@ const useMousePosition = () => {
   useEffect(() => {
     const updateMousePosition = (e: any) => {
       mousePosition.current = e.clientY;
-      if (mousePosition.current < 100) {
+      if (mousePosition.current < 250) {
         setIsCursorOnTop(true);
         return;
       }

@@ -16,7 +16,7 @@
         position: relative;
         .newsletter-input {
           border: none;
-          border-radius: 0.25rem 0.25rem 0 0;
+          border-radius: $b-radius-sm;
           width: 19rem;
           height: 3rem;
           padding: 1rem;
@@ -28,7 +28,9 @@
         .validation-error {
           color: white;
           position: absolute;
+          transform: translate(0, -15%);
           width: 100%;
+          height: 1.2rem;
           font-size: 0.8rem;
           background-color: $light-red;
           border-radius: 0 0 0.25rem 0.25rem;
@@ -89,6 +91,13 @@
       .newsletter-form {
         flex-direction: column;
         .input-container {
+          .validation-error {
+            position: relative;
+          }
+          .newsletter-error-icon {
+            top: 50%;
+            transform: translateY(-100%);
+          }
           .newsletter-input {
             width: 100%;
           }
