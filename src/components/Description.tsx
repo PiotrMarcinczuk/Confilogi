@@ -19,7 +19,7 @@ export default function Description({
       <div>
         <div className="description-container mx-1">
           <div className="description-text">
-            <h1 className="description-h">{title}</h1>
+            <h3 className="description-h">{title}</h3>
             <p className="description-p">{description}</p>
             <div className="description-buttons">
               <button className="description-btn--blue">More Info</button>

@@ -13,7 +13,7 @@ const Extension = memo(function Extension({
   return (
     <div className="extension-container">
       <img src={img} alt="extension icon" />
-      <h4 className="extension-browser">Add tp {browser}</h4>
+      <h4 className="extension-browser">Add to {browser}</h4>
       <p className="extension-version">Minimum version {version}</p>
       <img src={dotsImg} alt="dots image" className="extension-line" />
       <button className="extension-btn">Add & Install Extension</button>
