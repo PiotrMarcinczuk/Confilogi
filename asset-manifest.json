@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Confilogi/static/css/main.98edf087.css",
-    "main.js": "/Confilogi/static/js/main.ee567ded.js",
+    "main.css": "/Confilogi/static/css/main.389205f7.css",
+    "main.js": "/Confilogi/static/js/main.312ae658.js",
     "static/media/illustration-features-tab-3.svg": "/Confilogi/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
     "static/media/illustration-features-tab-2.svg": "/Confilogi/static/media/illustration-features-tab-2.e933bd6d921c537d7743e08ea4ec488e.svg",
     "static/media/illustration-hero.svg": "/Confilogi/static/media/illustration-hero.07801d05cb11930f0c826add8c05ce22.svg",
@@ -14,11 +14,11 @@
     "static/media/icon-error.svg": "/Confilogi/static/media/icon-error.a46cc66573dea1a15acb0dd260693083.svg",
     "static/media/logo-opera.svg": "/Confilogi/static/media/logo-opera.ff14e4763945338fe002017c72e7e597.svg",
     "static/media/icon-hamburger.svg": "/Confilogi/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
-    "main.98edf087.css.map": "/Confilogi/static/css/main.98edf087.css.map",
-    "main.ee567ded.js.map": "/Confilogi/static/js/main.ee567ded.js.map"
+    "main.389205f7.css.map": "/Confilogi/static/css/main.389205f7.css.map",
+    "main.312ae658.js.map": "/Confilogi/static/js/main.312ae658.js.map"
   },
   "entrypoints": [
-    "static/css/main.98edf087.css",
-    "static/js/main.ee567ded.js"
+    "static/css/main.389205f7.css",
+    "static/js/main.312ae658.js"
   ]
 }
