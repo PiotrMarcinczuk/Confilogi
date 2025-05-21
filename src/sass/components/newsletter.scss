@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1.8rem 0 1.8rem;
     .newsletter-form {
       width: 100%;
       display: flex;
@@ -63,11 +64,6 @@
       .newsletter-form-btn:hover {
         @include red-btn--hover;
       }
-    }
-    .users-count {
-      font-size: 1.1rem;
-      letter-spacing: 0.1rem;
-      margin: 0.5rem 0 1rem 0;
     }
     .newsletter-paragraph {
       font-size: 2rem;

@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 const Logo = ({
   textColor = "currentColor",
   circleColor = "#5267DF",
@@ -21,4 +23,4 @@ const Logo = ({
   </svg>
 );
 
-export default Logo;
+export default memo(Logo);

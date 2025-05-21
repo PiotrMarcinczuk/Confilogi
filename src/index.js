@@ -14,6 +14,7 @@ import "./sass/components/mobileMenu.scss";
 import "./sass/base/utility.scss";
 import "./sass/components/getBookmark.scss";
 import "./sass/components/newsletter.scss";
+import "./sass/components/joinedCount.scss";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

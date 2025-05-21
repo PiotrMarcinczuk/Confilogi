@@ -25,7 +25,6 @@ const Faq = memo(function Faq() {
                         if (prev.includes(key)) {
                           return prev.filter((item) => item !== key);
                         }
-                        console.log("prev", prev);
                         return [...prev, key];
                       });
                     }}>

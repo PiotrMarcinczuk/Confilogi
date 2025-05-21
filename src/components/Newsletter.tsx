@@ -1,15 +1,9 @@
 import { useRef, useState, useEffect, FormEvent, ChangeEvent } from "react";
 import iconError from "../assets/images/icon-error.svg";
+import JoinedCount from "./JoinedCount";
 export default function Newsletter() {
   const userEmail = useRef<string | null>(null);
   const [isError, setIsError] = useState<boolean>(false);
-  const [usersCount, setUsersCount] = useState<string>("35.000");
-
-  useEffect(() => {
-    setTimeout(() => {
-      setUsersCount("0");
-    }, 20000);
-  }, []);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -26,10 +20,8 @@ export default function Newsletter() {
 
   return (
     <section className="newsletter-section">
-      <div className="newsletter-container px-1">
-        <p className="users-count">
-          {usersCount} {usersCount !== "0" ? "+" : ""} ALREADY JOINED
-        </p>
+      <div className="newsletter-container">
+        <JoinedCount />
         <p className="newsletter-paragraph">
           Stay up-to-date with what we'are doing
         </p>
