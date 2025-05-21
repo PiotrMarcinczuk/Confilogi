@@ -1,7 +1,7 @@
 import { useState, memo } from "react";
 import faqQuestions from "../utils/faqQuestions";
 const Faq = memo(function Faq() {
-  const [questionIndexTab, setQuestionIndexTab] = useState([]);
+  const [questionIndexTab, setQuestionIndexTab] = useState<Array<number>>([]);
 
   return (
     <section className="faq-section">

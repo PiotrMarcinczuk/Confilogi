@@ -2,7 +2,7 @@ import logoBookmark from "../assets/images/logo-bookmark.svg";
 import facebookLogo from "../assets/images/icon-facebook.svg";
 import twitterLogo from "../assets/images/icon-twitter.svg";
 import Newsletter from "./Newsletter";
-import Logo from "../assets/svgCustom/Logo";
+import Logo from "../svgCustom/Logo";
 
 export default function Footer() {
   return (

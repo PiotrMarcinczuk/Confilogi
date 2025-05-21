@@ -3,7 +3,7 @@ import mobileMenu from "../assets/images/icon-hamburger.svg";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
 export default function Header() {
-  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState<boolean>(false);
 
   return (
     <header>

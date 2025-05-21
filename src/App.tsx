@@ -1,15 +1,18 @@
-import Faq from "./Faq";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Extension from "./Extension";
-import chromeImg from "../assets/images/logo-chrome.svg";
-import GetBookmark from "./GetBookmark";
-import Features from "./Features";
-import Popup from "./Popup";
+import Faq from "./components/Faq";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Extension from "./components/Extension";
+import chromeImg from "./assets/images/logo-chrome.svg";
+import firefoxImg from "./assets/images/logo-firefox.svg";
+import operaImg from "./assets/images/logo-opera.svg";
+import GetBookmark from "./components/GetBookmark";
+import Features from "./components/Features";
+import Popup from "./components/Popup";
 import { useEffect, useState } from "react";
-import useCusorDetection from "../hooks/useCursorDetection";
-export default function Main() {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+import useCusorDetection from "./hooks/useCursorDetection";
+
+export default function App() {
+  const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false);
   const isCursorOnTop = useCusorDetection();
 
   useEffect(() => {
@@ -38,8 +41,8 @@ export default function Main() {
               </p>
               <div className="extensions-list">
                 <Extension img={chromeImg} browser={"Chrome"} version={62} />
-                <Extension img={chromeImg} browser={"Chrome"} version={62} />
-                <Extension img={chromeImg} browser={"Chrome"} version={62} />
+                <Extension img={firefoxImg} browser={"Firefox"} version={55} />
+                <Extension img={operaImg} browser={"Opera"} version={46} />
               </div>
             </div>
           </div>

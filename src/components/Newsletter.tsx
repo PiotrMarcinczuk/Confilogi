@@ -1,9 +1,9 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, FormEvent, ChangeEvent } from "react";
 import iconError from "../assets/images/icon-error.svg";
 export default function Newsletter() {
-  const userEmail = useRef(null);
-  const [isError, setIsError] = useState(false);
-  const [usersCount, setUsersCount] = useState("35.000");
+  const userEmail = useRef<string | null>(null);
+  const [isError, setIsError] = useState<boolean>(false);
+  const [usersCount, setUsersCount] = useState<string>("35.000");
 
   useEffect(() => {
     setTimeout(() => {
@@ -11,7 +11,7 @@ export default function Newsletter() {
     }, 20000);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!userEmail.current || !userEmail.current.includes("@")) {
       setIsError(true);
@@ -20,7 +20,7 @@ export default function Newsletter() {
     setIsError(false);
   };
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     userEmail.current = e.target.value;
   };
 

@@ -3,8 +3,12 @@ import closeIcon from "../assets/images/icon-close.svg";
 import FeaturesButtons from "./FeaturesButtons";
 import featuresTab from "../utils/featuresTab";
 import useActiveTab from "../hooks/useActiveTab";
+import { useEffect } from "react";
 export default function Popup({ setIsPopupOpen }: any) {
   const { activeTab, setActiveTab } = useActiveTab();
+  useEffect(() => {
+    setActiveTab(1);
+  }, []);
   return (
     <section className="popup-section">
       <div className="popup-container">

@@ -1,4 +1,4 @@
-import Logo from "../assets/svgCustom/Logo";
+import Logo from "../svgCustom/Logo";
 import { memo } from "react";
 const MobileMenu = memo(function MobileMenu({ setIsOpenMobileMenu }: any) {
   return (
