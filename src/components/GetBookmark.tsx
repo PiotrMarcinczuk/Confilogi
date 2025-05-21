@@ -1,6 +1,6 @@
 import ilustration from "../assets/images/illustration-hero.svg";
-
-export default function GetBookmark() {
+import { memo } from "react";
+const GetBookmark = memo(function GetBookmark() {
   return (
     <>
       <section className="getBookmark-section">
@@ -23,14 +23,12 @@ export default function GetBookmark() {
           </div>
         </div>
       </section>
-      <div>
-        <div className="getBookmark-image">
-          <div>
-            <img src={ilustration} alt="bookmark image" />
-          </div>
-        </div>
-        <div className="blue-div--right"></div>
+      <div className="getBookmark-div-absolute">
+        <img className="absolute-img" src={ilustration} alt="bookmark image" />
+        <div className="blue-div-right"></div>
       </div>
     </>
   );
-}
+});
+
+export default GetBookmark;

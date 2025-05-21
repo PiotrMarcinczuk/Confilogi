@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import Description from "./Description";
 import FeaturesButtons from "./FeaturesButtons";
-import featuresTab from "../assets/featuresTab.json";
+import featuresTab from "../hooks/featuresTab";
 import useActiveTab from "../hooks/useActiveTab";
-export default function Features() {
+const Features = memo(function Features() {
   const { activeTab, setActiveTab } = useActiveTab();
   return (
     <>
@@ -32,4 +32,6 @@ export default function Features() {
       })}
     </>
   );
-}
+});
+
+export default Features;

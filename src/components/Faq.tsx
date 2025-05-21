@@ -1,6 +1,6 @@
 import iconArrow from "../assets/images/icon-arrow.svg";
-import { useState } from "react";
-export default function Faq() {
+import { useState, memo } from "react";
+const Faq = memo(function Faq() {
   const [questionIndexTab, setQuestionIndexTab] = useState([]);
   const faqData = [
     {
@@ -35,7 +35,7 @@ export default function Faq() {
                 <div key={key}>
                   <li
                     key={key}
-                    className="faq-list--item"
+                    className="faq-list-item"
                     onClick={() => {
                       setQuestionIndexTab((prev) => {
                         if (prev.includes(key)) {
@@ -45,10 +45,10 @@ export default function Faq() {
                         return [...prev, key];
                       });
                     }}>
-                    <div className="faq-list--item--title">
+                    <div className="faq-list-item-title">
                       <h6 className="faq-list-h">{item.question}</h6>
                       <div
-                        className={`mr-4 faq-list--item--arrow${
+                        className={`mr-4 faq-list-item-arrow${
                           questionIndexTab.includes(key) ? "--active" : ""
                         }`}>
                         <svg
@@ -78,4 +78,6 @@ export default function Faq() {
       </div>
     </section>
   );
-}
+});
+
+export default Faq;

@@ -11,10 +11,14 @@
     display: flex;
     position: relative;
     margin-bottom: 12rem;
-    margin-top: 10rem;
+    margin-top: 9rem;
     .getBookmark-text {
       max-width: 40%;
+      p {
+        margin-top: 2rem;
+      }
       .getBookmark-buttons {
+        margin-top: 2.5rem;
         .getBookmark-btn--blue {
           @include blue-btn;
           font-size: 1em;
@@ -44,7 +48,7 @@
       }
     }
   }
-  @media (max-width: 1180px) {
+  @media (max-width: 940px) {
     .getBookmark-container {
       .getBookmark-text {
         margin-top: 20rem;
@@ -66,40 +70,60 @@
     }
   }
 }
-
-.getBookmark-image {
+.getBookmark-div-absolute {
   position: absolute;
-  z-index: 40;
   right: 0;
-  top: 0;
-  transform: translate(-10%, 35%);
-}
-@media (max-width: 1180px) {
-  .getBookmark-image {
+  top: 15%;
+  .absolute-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 40;
+  }
+  .blue-div-right {
+    position: absolute;
+    right: 0;
+    top: 0;
     transform: translate(0, 40%);
-    margin: 0 1.8rem 0 1.8rem;
-    img {
-      max-width: 100%;
+    width: 500px;
+    height: 325px;
+    background-color: $light-blue;
+    border-radius: 70rem 0 0 70rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .getBookmark-div-absolute {
+    top: 10%;
+    .absolute-img {
+      width: 600px;
+    }
+    .blue-div-right {
+      width: 400px;
+      height: 300px;
+      transform: translate(0, 50%);
+      background-color: $light-blue;
+      border-radius: 70rem 0 0 70rem;
     }
   }
 }
 
-.blue-div--right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(0, 100%);
-  background-color: $light-blue;
-  width: 500px;
-  height: 300px;
-  border-radius: 70rem 0 0 70rem;
-  z-index: 10;
-}
-@media (max-width: 1180px) {
-  .blue-div--right {
+@media (max-width: 768px) {
+  .getBookmark-div-absolute {
     position: absolute;
-    width: 300px;
-    height: 200px;
-    transform: translate(0, 80%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // margin: 0.5rem;
+    .absolute-img {
+      width: 100%;
+      position: relative;
+    }
+    .blue-div-right {
+      height: 200px;
+      width: 200px;
+      position: static;
+      transform: translate(0, -100%);
+    }
   }
 }

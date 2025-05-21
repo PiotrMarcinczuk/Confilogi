@@ -22,7 +22,7 @@
           padding: 1rem;
           outline: none;
         }
-        .newsletter-iunput--error {
+        .newsletter-iunput-error {
           border: 2px solid $light-red;
         }
         .validation-error {
@@ -46,7 +46,7 @@
         }
       }
 
-      .newsletter-form--btn {
+      .newsletter-form-btn {
         background-color: $light-red;
         width: 8rem;
         height: 3rem;
@@ -58,28 +58,28 @@
         font-size: 1rem;
         margin: 0 0 0 1rem;
       }
-      .newsletter-form--btn:hover {
+      .newsletter-form-btn:hover {
         @include red-btn--hover;
       }
     }
     .users-count {
       font-size: 1.1rem;
       letter-spacing: 0.1rem;
-      margin: 0.5rem 0 0.5rem 0;
+      margin: 0.5rem 0 1rem 0;
     }
     .newsletter-paragraph {
       font-size: 2rem;
       width: 40%;
       text-align: center;
       font-weight: 500;
-      margin: 0.8rem 0 0.5rem 0;
+      margin: 0.8rem 0 2.2rem 0;
     }
     p {
       margin: 0;
     }
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .newsletter-section {
     .newsletter-container {
       .newsletter-paragraph {
@@ -93,7 +93,7 @@
             width: 100%;
           }
         }
-        .newsletter-form--btn {
+        .newsletter-form-btn {
           width: 100%;
           margin: 1rem 0 0 0;
         }

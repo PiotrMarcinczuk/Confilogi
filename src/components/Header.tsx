@@ -12,10 +12,12 @@ export default function Header() {
           <img src={logoBookmark} alt="logo BOOKMARK" />
         </div>
         {!isOpenMobileMenu && (
-          <div
-            className="mobile-menu"
-            onClick={() => setIsOpenMobileMenu(true)}>
-            <img src={mobileMenu} alt="open menu" />
+          <div className="mobile-menu">
+            <img
+              src={mobileMenu}
+              onClick={() => setIsOpenMobileMenu(true)}
+              alt="open menu"
+            />
           </div>
         )}
         {!isOpenMobileMenu && (

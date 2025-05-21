@@ -37,7 +37,7 @@ export default function Newsletter() {
           <div className="input-container">
             <input
               className={`newsletter-input ${
-                isError && "newsletter-iunput--error"
+                isError && "newsletter-iunput-error"
               }`}
               type="text"
               placeholder="Enter your email address"
@@ -58,7 +58,7 @@ export default function Newsletter() {
               </div>
             )}
           </div>
-          <button className="newsletter-form--btn" type="submit">
+          <button className="newsletter-form-btn" type="submit">
             Contact Us
           </button>
         </form>

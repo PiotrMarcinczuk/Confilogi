@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 22rem;
+    margin-top: 19rem;
     .extensions-list {
       display: flex;
     }
@@ -33,7 +33,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .extensions-section {
     .extensions-container {
       .extensions-h4 {

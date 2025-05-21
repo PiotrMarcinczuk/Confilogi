@@ -8,26 +8,42 @@
   height: 100%;
   z-index: 1000;
   background-color: rgba($dark-blue, 0.9);
-  .logo-container {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-  .closeMenu-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  .mobileMenu-nav {
-    margin-top: 3rem;
-    ul {
-      display: flex;
-      flex-direction: column;
-      li {
-        margin-top: 1rem;
-      }
+  .mobileMenu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+    .closeMenu-icon {
+      cursor: pointer;
+      z-index: 1000;
     }
   }
+}
+.mobileMenu-nav {
+  margin: 2rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: white;
+    hr {
+      width: 100%;
+    }
+    li {
+      margin: 1rem 0 1rem 0;
+      font-size: 1.25rem;
+    }
+    .mobile-login-btn {
+      border: 1px solid white;
+      border-radius: $b-radius-sm;
+      padding: 0.8rem;
+    }
+  }
+}
+.mobileMenu-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin: auto;
+  margin-top: 10rem;
 }

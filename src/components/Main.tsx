@@ -7,13 +7,20 @@ import GetBookmark from "./GetBookmark";
 import Features from "./Features";
 import Popup from "./Popup";
 import { useEffect, useState } from "react";
+import useCusorDetection from "../hooks/useCursorDetection";
 export default function Main() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const isCursorOnTop = useCusorDetection();
+
   useEffect(() => {
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   setIsPopupOpen(true);
+    // }, 2000);
+    if (isCursorOnTop) {
       setIsPopupOpen(true);
-    }, 2000);
-  }, []);
+    }
+  }, [isCursorOnTop]);
+
   return (
     <>
       {isPopupOpen && <Popup setIsPopupOpen={setIsPopupOpen} />}
